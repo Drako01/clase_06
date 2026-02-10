@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const httpServer = createServer(app);
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const io = new Server(httpServer);
 
 /** 1) Motor de Plantillas */
